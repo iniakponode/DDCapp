@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        jcenter()
+        maven {
+            url "https://s3.us-east-2.amazonaws.com/android.telematics.sdk.production/"
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://s3.us-east-2.amazonaws.com/android.telematics.sdk.production/"
+        }
+    }
+}
+rootProject.name = "DDCApp"
+include ':app'

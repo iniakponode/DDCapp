@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/registerDevice"
+        android:name="com.uoa.ddcapp.RegisterDevice"
+        android:label="fragment_register_device"
+        tools:layout="@layout/fragment_register_device" >
+        <action
+            android:id="@+id/action_registerDevice_to_permissionsFragment"
+            app:destination="@id/permissionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="com.uoa.ddcapp.PermissionsFragment"
+        android:label="fragment_permissions"
+        tools:layout="@layout/fragment_permissions" >
+        <action
+            android:id="@+id/action_permissionsFragment_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinkStateForm"
+        android:name="com.uoa.ddcapp.DrinkStateForm"
+        android:label="fragment_drink_state_form"
+        tools:layout="@layout/fragment_drink_state_form" />
+    <fragment
+        android:id="@+id/numberOfBottles"
+        android:name="com.uoa.ddcapp.NumberOfBottles"
+        android:label="fragment_number_of_bottles"
+        tools:layout="@layout/fragment_number_of_bottles" />
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.uoa.ddcapp.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_registerDevice"
+            app:destination="@id/registerDevice" />
+        <action
+            android:id="@+id/action_home2_self"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/essentialStartDetails2"
+        android:name="com.uoa.ddcapp.EssentialStartDetails"
+        android:label="fragment_essential_start_details"
+        tools:layout="@layout/fragment_essential_start_details" />
+    <activity
+        android:id="@+id/cameraActivity"
+        android:name="com.uoa.ddcapp.CameraActivity"
+        android:label="activity_camera"
+        tools:layout="@layout/activity_camera" />
+</navigation>

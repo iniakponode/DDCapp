@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DDCApp</string>
+    <string name="permission_deny_text">Required permissions denied. Exiting.</string>
+    <string name="tensorflow_lite_logo_description">Detect Intoxication</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="start_capture">Start Video</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_next">Next</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="drink_quest">Did you just drink any substance containing alcohol?</string>
+    <string name="no_bottles">How many bottles?</string>
+    <string name="enter_number_here">Enter number here</string>
+    <string name="tot_miles">Vehicle Total Miles Coverage</string>
+    <string name="v_capacity">Maximum No. of Passengers</string>
+    <string name="your_daily_safety_tips">YOUR DAILY SAFETY TIPS</string>
+    <string name="start_trip">Start Trip</string>
+    <string name="stop_capture">Stop Trip</string>
+    <string name="register_device">Register Device</string>
+    <string name="deviceToken">saved_device_token_key</string>
+</resources>

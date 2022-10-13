@@ -1,0 +1,21 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.5.31'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        def nav_version = '2.4.1'
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        // 4.1.0-alpha10 or above and Android Studio 4.1 Canary 10 or above is required for
+        // TensorFlow Lite / Machine Learning (ML) binding
+        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
+
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
